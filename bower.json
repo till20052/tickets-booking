@@ -1,0 +1,25 @@
+{
+  "name": "starak-tickets-booking",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Artem Morozov <artem.morozov@azzby.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.1",
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-ui-router": "^0.2.18"
+  }
+}

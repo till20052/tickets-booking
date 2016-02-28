@@ -1,5 +1,8 @@
 /.idea
+/app/**/*.html
+/app/styles/*.css
 /bower_components
 /node_modules
 /public/*
 !/public/.gitkeep
+!/public/img
