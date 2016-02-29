@@ -1,9 +1,66 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font: 12pt "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: #3b5998;
+  text-decoration: none;
 }
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body > header > div > div,
+body > section > div > div,
+body > footer > div > div {
+  width: 900px;
+  margin: 0 auto;
+}
+
+body > header {
+
+  nav[role='menu'] {
+    > ul {
+      margin: 0;
+      padding: 0;
+      width: 500px;
+      display: table;
+      table-layout: fixed;
+      list-style: none;
+
+      > li {
+        display: table-cell;
+
+        > a {
+          display: block;
+          padding: 15px 0;
+          text-transform: uppercase;
+          border-top: 5px solid transparent;
+          box-sizing: border-box;
+
+          &:hover {
+            border-top-color: #3b5998;
+          }
+        }
+      }
+    }
+  }
+
+}
+
+@import (reference) "layout/section";
+body > section {
+  margin-top: 30px;
+
+  >div[role='info'] {
+    border-top: 1px solid #d2d2d2;
+  }
+
+  &:extend(body);
+}
+
 
