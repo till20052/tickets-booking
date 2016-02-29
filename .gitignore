@@ -1,6 +1,6 @@
 /.idea
 /app/**/*.html
-/app/styles/*.css
+/app/styles/**/*.css
 /bower_components
 /node_modules
 /public/*

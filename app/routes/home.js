@@ -1,13 +1,7 @@
-var path = require('path'),
-    express = require('express'),
-    router = express.Router();
-
-router.get('^/home/*.html$', function (req, res) {
-    res.render(path.join('../sources/home/views', req.url.split('/').slice(-1)[0].split('.')[0]));
-});
+var router = require('express').Router();
 
 module.exports = {
     router: router,
-    prefix: '/',
+    prefix: '/home',
     priority: 0
 };
