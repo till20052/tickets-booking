@@ -1,11 +1,26 @@
 doctype html
-html
+html(ng-app='app')
     head
         base(href='/')
         title= title
         link(rel='stylesheet', href='/css/style.css')
-    body(ng-app='app')
-        block content
+    body
+        header
+            div
+                div
+                    div
+                        include layout/header
+            block header
+
+        section
+            block section
+            include layout/section
+
+        footer
+            div
+                div
+                    div
+                        include layout/footer
         block scripts
             script(type='text/javascript', src='/js/libs.js')
             script(type='text/javascript', src='/js/app.js')
